@@ -2,127 +2,113 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: images
-public_folder: images
+media_folder: "images"
+public_folder: "/images"
 
 collections:
 
-  - name: "english"
-    label: "English Content"
+  - label: "English Content"
+    name: "english"
     files:
-
-      - name: "en_hero"
-        label: "Hero Section"
+      - label: "Website Content"
+        name: "website"
         file: "content/en.json"
         fields:
-          - { name: "hero.badge", label: "Badge Text", widget: string, hint: "Small label above the headline (e.g. 'Dade County's Trusted Driving School')" }
-          - { name: "hero.sub", label: "Tagline", widget: string, hint: "Italic line below the headline" }
-          - { name: "hero.body", label: "Hero Description", widget: text, hint: "Main paragraph in the hero section" }
 
-      - name: "en_services"
-        label: "Services Section"
-        file: "content/en.json"
-        fields:
-          - { name: "services.desc", label: "Section Description", widget: text }
-          - { name: "services.s2title", label: "Practical Driving Exam — Title", widget: string }
-          - { name: "services.s2desc", label: "Practical Driving Exam — Description", widget: text }
-          - { name: "services.s3title", label: "Driving Lessons — Title", widget: string }
-          - { name: "services.s3desc", label: "Driving Lessons — Description", widget: text }
-          - { name: "services.s4title", label: "Alcohol & Drug Course — Title", widget: string }
-          - { name: "services.s4desc", label: "Alcohol & Drug Course — Description", widget: text }
-          - { name: "services.s5title", label: "Theoretical Exam — Title", widget: string }
-          - { name: "services.s5desc", label: "Theoretical Exam — Description", widget: text }
+          - {label: "Hero — Badge", name: "hero.badge", widget: string}
+          - {label: "Hero — Subtitle", name: "hero.sub", widget: string}
+          - {label: "Hero — Description", name: "hero.body", widget: text}
 
-      - name: "en_faq"
-        label: "FAQ Section"
-        file: "content/en.json"
-        fields:
-          - { name: "faq.q1", label: "Question 1", widget: string }
-          - { name: "faq.a1", label: "Answer 1", widget: text }
-          - { name: "faq.q2", label: "Question 2", widget: string }
-          - { name: "faq.a2", label: "Answer 2", widget: text }
-          - { name: "faq.q3", label: "Question 3", widget: string }
-          - { name: "faq.a3", label: "Answer 3", widget: text }
-          - { name: "faq.q4", label: "Question 4", widget: string }
-          - { name: "faq.a4", label: "Answer 4", widget: text }
-          - { name: "faq.q5", label: "Question 5", widget: string }
-          - { name: "faq.a5", label: "Answer 5", widget: text }
-          - { name: "faq.q6", label: "Question 6", widget: string }
-          - { name: "faq.a6", label: "Answer 6", widget: text }
-          - { name: "faq.q7", label: "Question 7", widget: string }
-          - { name: "faq.a7", label: "Answer 7", widget: text }
+          - {label: "Services — Section Description", name: "services.desc", widget: text}
+          - {label: "Services — Theoretical Exam Title", name: "services.s5title", widget: string}
+          - {label: "Services — Theoretical Exam Description", name: "services.s5desc", widget: text}
+          - {label: "Services — Practical Exam Title", name: "services.s2title", widget: string}
+          - {label: "Services — Practical Exam Description", name: "services.s2desc", widget: text}
+          - {label: "Services — Driving Lessons Title", name: "services.s3title", widget: string}
+          - {label: "Services — Driving Lessons Description", name: "services.s3desc", widget: text}
+          - {label: "Services — Alcohol Course Title", name: "services.s4title", widget: string}
+          - {label: "Services — Alcohol Course Description", name: "services.s4desc", widget: text}
+          - {label: "Services — Bilingual Service Title", name: "services.s6title", widget: string}
+          - {label: "Services — Bilingual Service Description", name: "services.s6desc", widget: text}
 
-      - name: "en_general"
-        label: "General / Other Text"
-        file: "content/en.json"
-        fields:
-          - { name: "contact.hoursValue", label: "Business Hours", widget: string, hint: "e.g. Mon–Fri 8am–3pm · Sat 8am–1pm · Sun Closed" }
-          - { name: "form.availabilityNote", label: "Booking Availability Note", widget: string, hint: "Short note shown at the top of the booking form" }
-          - { name: "contact.body", label: "Contact Section Description", widget: text }
-          - { name: "footer.tagline", label: "Footer Tagline", widget: text }
-          - { name: "cta.title", label: "Call-to-Action Title", widget: string }
-          - { name: "cta.body", label: "Call-to-Action Description", widget: text }
-          - { name: "why.body", label: "Why Choose Us — Description", widget: text }
-          - { name: "why.f1desc", label: "Why Us — Point 1 Description", widget: string }
-          - { name: "why.f2desc", label: "Why Us — Point 2 Description", widget: string }
-          - { name: "why.f3desc", label: "Why Us — Point 3 Description", widget: string }
+          - {label: "Why Choose Us — Main Description", name: "why.body", widget: text}
+          - {label: "Why Choose Us — Point 1", name: "why.f1desc", widget: string}
+          - {label: "Why Choose Us — Point 2", name: "why.f2desc", widget: string}
+          - {label: "Why Choose Us — Point 3", name: "why.f3desc", widget: string}
 
-  - name: "spanish"
-    label: "Contenido en Español"
+          - {label: "Reviews — Subtitle", name: "reviews.sub", widget: text}
+
+          - {label: "FAQ — Question 1", name: "faq.q1", widget: string}
+          - {label: "FAQ — Answer 1", name: "faq.a1", widget: text}
+          - {label: "FAQ — Question 2", name: "faq.q2", widget: string}
+          - {label: "FAQ — Answer 2", name: "faq.a2", widget: text}
+          - {label: "FAQ — Question 3", name: "faq.q3", widget: string}
+          - {label: "FAQ — Answer 3", name: "faq.a3", widget: text}
+          - {label: "FAQ — Question 4", name: "faq.q4", widget: string}
+          - {label: "FAQ — Answer 4", name: "faq.a4", widget: text}
+          - {label: "FAQ — Question 5", name: "faq.q5", widget: string}
+          - {label: "FAQ — Answer 5", name: "faq.a5", widget: text}
+          - {label: "FAQ — Question 6", name: "faq.q6", widget: string}
+          - {label: "FAQ — Answer 6", name: "faq.a6", widget: text}
+          - {label: "FAQ — Question 7", name: "faq.q7", widget: string}
+          - {label: "FAQ — Answer 7", name: "faq.a7", widget: text}
+
+          - {label: "Contact — Description", name: "contact.body", widget: text}
+          - {label: "Business Hours", name: "contact.hoursValue", widget: string}
+          - {label: "Booking Availability Note", name: "form.availabilityNote", widget: string}
+          - {label: "Footer Tagline", name: "footer.tagline", widget: text}
+          - {label: "CTA Title", name: "cta.title", widget: string}
+          - {label: "CTA Description", name: "cta.body", widget: text}
+
+  - label: "Contenido en Español"
+    name: "spanish"
     files:
-
-      - name: "es_hero"
-        label: "Sección Hero"
+      - label: "Contenido del Sitio"
+        name: "website"
         file: "content/es.json"
         fields:
-          - { name: "hero.badge", label: "Texto del Badge", widget: string }
-          - { name: "hero.sub", label: "Eslogan", widget: string }
-          - { name: "hero.body", label: "Descripción Principal", widget: text }
 
-      - name: "es_services"
-        label: "Sección de Servicios"
-        file: "content/es.json"
-        fields:
-          - { name: "services.desc", label: "Descripción de la Sección", widget: text }
-          - { name: "services.s2title", label: "Examen Práctico — Título", widget: string }
-          - { name: "services.s2desc", label: "Examen Práctico — Descripción", widget: text }
-          - { name: "services.s3title", label: "Clases de Manejo — Título", widget: string }
-          - { name: "services.s3desc", label: "Clases de Manejo — Descripción", widget: text }
-          - { name: "services.s4title", label: "Alcohol y Drogas — Título", widget: string }
-          - { name: "services.s4desc", label: "Alcohol y Drogas — Descripción", widget: text }
-          - { name: "services.s5title", label: "Examen Teórico — Título", widget: string }
-          - { name: "services.s5desc", label: "Examen Teórico — Descripción", widget: text }
+          - {label: "Hero — Badge", name: "hero.badge", widget: string}
+          - {label: "Hero — Eslogan", name: "hero.sub", widget: string}
+          - {label: "Hero — Descripción", name: "hero.body", widget: text}
 
-      - name: "es_faq"
-        label: "Preguntas Frecuentes"
-        file: "content/es.json"
-        fields:
-          - { name: "faq.q1", label: "Pregunta 1", widget: string }
-          - { name: "faq.a1", label: "Respuesta 1", widget: text }
-          - { name: "faq.q2", label: "Pregunta 2", widget: string }
-          - { name: "faq.a2", label: "Respuesta 2", widget: text }
-          - { name: "faq.q3", label: "Pregunta 3", widget: string }
-          - { name: "faq.a3", label: "Respuesta 3", widget: text }
-          - { name: "faq.q4", label: "Pregunta 4", widget: string }
-          - { name: "faq.a4", label: "Respuesta 4", widget: text }
-          - { name: "faq.q5", label: "Pregunta 5", widget: string }
-          - { name: "faq.a5", label: "Respuesta 5", widget: text }
-          - { name: "faq.q6", label: "Pregunta 6", widget: string }
-          - { name: "faq.a6", label: "Respuesta 6", widget: text }
-          - { name: "faq.q7", label: "Pregunta 7", widget: string }
-          - { name: "faq.a7", label: "Respuesta 7", widget: text }
+          - {label: "Servicios — Descripción", name: "services.desc", widget: text}
+          - {label: "Servicios — Examen Teórico Título", name: "services.s5title", widget: string}
+          - {label: "Servicios — Examen Teórico Descripción", name: "services.s5desc", widget: text}
+          - {label: "Servicios — Examen Práctico Título", name: "services.s2title", widget: string}
+          - {label: "Servicios — Examen Práctico Descripción", name: "services.s2desc", widget: text}
+          - {label: "Servicios — Clases de Manejo Título", name: "services.s3title", widget: string}
+          - {label: "Servicios — Clases de Manejo Descripción", name: "services.s3desc", widget: text}
+          - {label: "Servicios — Alcohol y Drogas Título", name: "services.s4title", widget: string}
+          - {label: "Servicios — Alcohol y Drogas Descripción", name: "services.s4desc", widget: text}
+          - {label: "Servicios — Servicio Bilingüe Título", name: "services.s6title", widget: string}
+          - {label: "Servicios — Servicio Bilingüe Descripción", name: "services.s6desc", widget: text}
 
-      - name: "es_general"
-        label: "Texto General / Otros"
-        file: "content/es.json"
-        fields:
-          - { name: "contact.hoursValue", label: "Horario de Atención", widget: string }
-          - { name: "form.availabilityNote", label: "Nota de Disponibilidad", widget: string }
-          - { name: "contact.body", label: "Descripción de Contacto", widget: text }
-          - { name: "footer.tagline", label: "Lema del Footer", widget: text }
-          - { name: "cta.title", label: "Título del CTA", widget: string }
-          - { name: "cta.body", label: "Descripción del CTA", widget: text }
-          - { name: "why.body", label: "Por Qué Elegirnos — Descripción", widget: text }
-          - { name: "why.f1desc", label: "Por Qué — Punto 1", widget: string }
-          - { name: "why.f2desc", label: "Por Qué — Punto 2", widget: string }
-          - { name: "why.f3desc", label: "Por Qué — Punto 3", widget: string }
+          - {label: "Por Qué Elegirnos — Descripción", name: "why.body", widget: text}
+          - {label: "Por Qué — Punto 1", name: "why.f1desc", widget: string}
+          - {label: "Por Qué — Punto 2", name: "why.f2desc", widget: string}
+          - {label: "Por Qué — Punto 3", name: "why.f3desc", widget: string}
+
+          - {label: "Reseñas — Subtítulo", name: "reviews.sub", widget: text}
+
+          - {label: "FAQ — Pregunta 1", name: "faq.q1", widget: string}
+          - {label: "FAQ — Respuesta 1", name: "faq.a1", widget: text}
+          - {label: "FAQ — Pregunta 2", name: "faq.q2", widget: string}
+          - {label: "FAQ — Respuesta 2", name: "faq.a2", widget: text}
+          - {label: "FAQ — Pregunta 3", name: "faq.q3", widget: string}
+          - {label: "FAQ — Respuesta 3", name: "faq.a3", widget: text}
+          - {label: "FAQ — Pregunta 4", name: "faq.q4", widget: string}
+          - {label: "FAQ — Respuesta 4", name: "faq.a4", widget: text}
+          - {label: "FAQ — Pregunta 5", name: "faq.q5", widget: string}
+          - {label: "FAQ — Respuesta 5", name: "faq.a5", widget: text}
+          - {label: "FAQ — Pregunta 6", name: "faq.q6", widget: string}
+          - {label: "FAQ — Respuesta 6", name: "faq.a6", widget: text}
+          - {label: "FAQ — Pregunta 7", name: "faq.q7", widget: string}
+          - {label: "FAQ — Respuesta 7", name: "faq.a7", widget: text}
+
+          - {label: "Contacto — Descripción", name: "contact.body", widget: text}
+          - {label: "Horario", name: "contact.hoursValue", widget: string}
+          - {label: "Nota de Disponibilidad", name: "form.availabilityNote", widget: string}
+          - {label: "Texto del Footer", name: "footer.tagline", widget: text}
+          - {label: "Título del CTA", name: "cta.title", widget: string}
+          - {label: "Descripción del CTA", name: "cta.body", widget: text}
