@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" id="html-root">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maria Auto & Traffic School — Dade County's Trusted Driving School</title>
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230d1f3c'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='58' font-weight='700' fill='%23c9a84c' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+
+<meta name="description" content="Maria Auto & Traffic School — Miami-Dade's trusted driving school. Written tests, road exams, and driving lessons in English and Spanish. Walk-ins welcome.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://mariaautoschool.netlify.app/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Maria Auto & Traffic School">
+<meta property="og:description" content="Miami-Dade's trusted driving school. Written tests, road exams & driving lessons in English and Spanish.">
+<meta property="og:image" content="https://mariaautoschool.netlify.app/images/maria3.jpg">
+<meta property="og:image:alt" content="Students celebrating passing their driving test outside Maria Auto & Traffic School">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://mariaautoschool.netlify.app/images/maria3.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;1,300;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DrivingSchool",
+  "name": "Maria Auto & Traffic School",
+  "image": "https://mariaautoschool.netlify.app/images/maria5.jpg",
+  "url": "https://mariaautoschool.netlify.app/",
+  "telephone": "+1-305-216-8166",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "281 NW 82nd Ave",
+    "addressLocality": "Miami",
+    "addressRegion": "FL",
+    "postalCode": "33126",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "15:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "08:00",
+      "closes": "13:00"
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.6",
+    "reviewCount": "50",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "priceRange": "$50-$150",
+  "areaServed": "Miami-Dade County, FL",
+  "availableLanguage": ["English", "Spanish"]
+}
+</script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">Maria Auto & Traffic School<span>Dade County, Florida</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+    <li><a href="#services" data-i18n="nav.services">Services</a></li>
+    <li><a href="#process" data-i18n="nav.process">How It Works</a></li>
+    <li><a href="#reviews" data-i18n="nav.reviews">Reviews</a></li>
+    <li><a href="faq.html" data-i18n="footer.faq">FAQ</a></li>
+    <li><a href="book.html" data-i18n="nav.contact">Booking</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-switch">
+      <button class="lang-btn" id="lang-btn">🌐 <span id="lang-btn-label">EN</span></button>
+      <div class="lang-menu" id="lang-menu">
+        <button class="lang-option" data-lang="en">English</button>
+        <button class="lang-option" data-lang="es">Español</button>
+      </div>
+    </div>
+    <a href="book.html" class="nav-cta" data-i18n="nav.cta">Book Now</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html" class="mobile-link" data-i18n="nav.home">Home</a>
+  <a href="#services" class="mobile-link" data-i18n="nav.services">Services</a>
+  <a href="#process" class="mobile-link" data-i18n="nav.process">How It Works</a>
+  <a href="#reviews" class="mobile-link" data-i18n="nav.reviews">Reviews</a>
+  <a href="faq.html" class="mobile-link" data-i18n="footer.faq">FAQ</a>
+  <a href="book.html" class="mobile-link" data-i18n="nav.contact">Booking</a>
+  <div class="mobile-lang">
+    <button data-lang="en">English</button>
+    <button data-lang="es">Español</button>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="hero-bg-texture"></div>
+  <div class="hero-left">
+    <div class="hero-badge"><span class="hero-badge-dot"></span><span data-i18n="hero.badge">Dade County's Trusted Driving School</span></div>
+    <h1 class="hero-headline" data-i18n-html="hero.headline">Drive With<em>Confidence.</em></h1>
+    <p class="hero-sub" data-i18n="hero.sub">Your license. Your freedom. Your future.</p>
+    <p class="hero-body" data-i18n="hero.body">Maria Auto & Traffic School has guided hundreds of students from first-time nerves to full confidence behind the wheel. We make the process simple and welcoming — written test, road exam, or driving lessons.</p>
+    <div class="hero-actions">
+      <a href="book.html" class="btn-primary" data-i18n="hero.cta1">Book Your Session</a>
+      <a href="#services" class="btn-secondary" data-i18n="hero.cta2">Explore Services</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-photo-wrap">
+      <div class="hero-photo">
+        <img src="images/maria3.jpg" alt="Students celebrating passing their driving test outside Maria Auto & Traffic School">
+        <div class="hero-photo-badge" data-i18n="hero.photoBadge">Real students. Real results.</div>
+      </div>
+      <div class="hero-stats-row">
+        <div class="hero-stat-card">
+          <div class="stat-number">4.6★</div>
+          <div class="stat-label" data-i18n="hero.statRating">Google Rating</div>
+        </div>
+        <div class="hero-stat-card">
+          <div class="stat-number">50+</div>
+          <div class="stat-label" data-i18n="hero.statReviews">Google Reviews</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="services-header">
+    <div>
+      <p class="section-label" data-i18n="services.label">What We Offer</p>
+      <h2 class="section-title" data-i18n-html="services.title">Everything You Need<br>to Get Licensed</h2>
+    </div>
+    <p class="services-desc" data-i18n="services.desc">From your first written test to your practical road exam, our team guides you with patience and expertise — in English and Spanish.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card fade-up">
+      <div class="service-icon">📝</div>
+      <h3 class="service-name" data-i18n="services.s5title">Theoretical Exam (prep included)</h3>
+      <p class="service-desc" data-i18n="services.s5desc">Walk in with no appointment needed — we screen a prep video, then you take the exam on computer with live feedback. We break down every traffic law so it actually sticks, not just gets memorized.</p>
+    </div>
+    <div class="service-card fade-up">
+      <div class="service-icon">🚗</div>
+      <h3 class="service-name" data-i18n="services.s2title">Practical Driving Exam</h3>
+      <p class="service-desc" data-i18n="services.s2desc">Take your road test with experienced, calm instructors who explain every step clearly.</p>
+    </div>
+    <div class="service-card fade-up">
+      <div class="service-icon">🎓</div>
+      <h3 class="service-name" data-i18n="services.s3title">Driving Lessons</h3>
+      <p class="service-desc" data-i18n="services.s3desc">Nervous behind the wheel? We build confidence from zero — highway merging, parking, and more.</p>
+    </div>
+    <div class="service-card fade-up">
+      <div class="service-icon">🍺</div>
+      <h3 class="service-name" data-i18n="services.s4title">Alcohol & Drug Course</h3>
+      <p class="service-desc" data-i18n="services.s4desc">State-required traffic law and substance awareness courses completed efficiently at our school.</p>
+    </div>
+    <div class="service-card fade-up">
+      <div class="service-icon">🌐</div>
+      <h3 class="service-name" data-i18n="services.s6title">Bilingual Service</h3>
+      <p class="service-desc" data-i18n="services.s6desc">We proudly serve the Dade County community in both English and Spanish.</p>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="why-left">
+    <p class="section-label" style="color:var(--gold)" data-i18n="why.label">Why Maria's School</p>
+    <h2 class="section-title" style="color:#fff" data-i18n-html="why.title">Family-Run.<br>Community-Trusted.</h2>
+    <p class="why-body" data-i18n="why.body">When you walk through our doors, you're not a number — you're family. The Dade County community has trusted us for years.</p>
+    <div class="why-features">
+      <div class="why-feature">
+        <div class="why-feature-icon">🏆</div>
+        <div class="why-feature-text"><h4 data-i18n="why.f1title">Trusted in Dade County</h4><p data-i18n="why.f1desc">Rated 4.6 stars from 50+ real student reviews.</p></div>
+      </div>
+      <div class="why-feature">
+        <div class="why-feature-icon">🤝</div>
+        <div class="why-feature-text"><h4 data-i18n="why.f2title">Warm, Patient Instructors</h4><p data-i18n="why.f2desc">Maria and her team are known for their kindness and the confidence they instill.</p></div>
+      </div>
+      <div class="why-feature">
+        <div class="why-feature-icon">⚡</div>
+        <div class="why-feature-text"><h4 data-i18n="why.f3title">Walk-In Friendly</h4><p data-i18n="why.f3desc">No appointment needed for the written test.</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="why-right">
+    <div class="why-photo-grid">
+      <div class="why-photo-main"><img src="images/maria1.jpg" alt="Happy students waiting inside Maria Auto & Traffic School" loading="lazy"></div>
+      <div class="why-photo-side">
+        <div class="why-photo-small"><img src="images/maria4.jpg" alt="Student holding Aprobé sign" loading="lazy"></div>
+        <div class="why-photo-small"><img src="images/maria2.jpg" alt="Students with passing certificate" loading="lazy"></div>
+      </div>
+    </div>
+    <div class="why-mini-stats">
+      <div class="why-mini"><div class="why-mini-num">4.6★</div><div class="why-mini-label" data-i18n="why.mRating">Rating</div></div>
+      <div class="why-mini"><div class="why-mini-num">50+</div><div class="why-mini-label" data-i18n="why.mReviews">Reviews</div></div>
+      <div class="why-mini"><div class="why-mini-num">En/Es</div><div class="why-mini-label" data-i18n="why.mLang">Bilingual</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="reviews-header">
+    <p class="section-label" data-i18n="reviews.label">Real Students, Real Results</p>
+    <h2 class="section-title" data-i18n="reviews.title">What Our Community Says</h2>
+    <p class="reviews-sub" data-i18n="reviews.sub">From first-time drivers to newcomers finding their way in a new country.</p>
+    <div class="reviews-rating-badge">
+      <span class="stars">★★★★★</span>
+      <span class="num">4.6</span>
+      <span class="count">· 50+ <span data-i18n="reviews.googleReviews">Google Reviews</span></span>
+    </div>
+  </div>
+  <div class="reviews-track-wrap">
+    <div class="reviews-track">
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Maria Auto and Traffic School is the BEST driving school in Dade County. I 100% recommend this school."</p><div class="review-author">Rene & Dopey Garmas</div><div class="review-time">Local Guide · 2 years ago</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Excellent experience! I felt very comfortable with Maria. She explains things clearly, precisely, and calmly."</p><div class="review-author">Mido Vnc</div><div class="review-time">6 months ago</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Super easy process. They show you an educational video first, then the computer test tells you how you're doing as you go."</p><div class="review-author">Kaiti Tarajano</div><div class="review-time">Local Guide · 2 years ago</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"The family owners are very kind, welcoming, and knowledgeable. I highly recommend it."</p><div class="review-author">Noah Cameron</div><div class="review-time">5 months ago</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"I just passed my practical exam and I am totally delighted. María is very charming and the teacher is kind and polite."</p><div class="review-author">Jose Ramos</div><div class="review-time">Local Guide · 2 years ago</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"I love this school. They transmit a peace that touches your heart ❤️ and they are very professional."</p><div class="review-author">Legna Arbos</div><div class="review-time">a year ago</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"They gave me the confidence and encouragement I needed to overcome my fear of driving."</p><div class="review-author">Yasmany Salgado</div><div class="review-time">Local Guide · 2 years ago</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Reasonable price and quick process — much appreciated when you're from out of town."</p><div class="review-author">Leire Viana</div><div class="review-time">6 months ago</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Excellent teacher. She gives you confidence and motivation. Always grateful."</p><div class="review-author">Vilma Blanco</div><div class="review-time">a year ago</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Very satisfied with the school. Great teachers and excellent staff. I recommend it 1000%!"</p><div class="review-author">Larisa Montero</div><div class="review-time">Local Guide · a year ago</div></div>
+      <!-- duplicate for seamless loop -->
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Maria Auto and Traffic School is the BEST driving school in Dade County. I 100% recommend this school."</p><div class="review-author">Rene & Dopey Garmas</div><div class="review-time">Local Guide · 2 years ago</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Excellent experience! I felt very comfortable with Maria. She explains things clearly, precisely, and calmly."</p><div class="review-author">Mido Vnc</div><div class="review-time">6 months ago</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Super easy process. They show you an educational video first, then the computer test tells you how you're doing as you go."</p><div class="review-author">Kaiti Tarajano</div><div class="review-time">Local Guide · 2 years ago</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"The family owners are very kind, welcoming, and knowledgeable. I highly recommend it."</p><div class="review-author">Noah Cameron</div><div class="review-time">5 months ago</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"I just passed my practical exam and I am totally delighted. María is very charming and the teacher is kind and polite."</p><div class="review-author">Jose Ramos</div><div class="review-time">Local Guide · 2 years ago</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"I love this school. They transmit a peace that touches your heart ❤️ and they are very professional."</p><div class="review-author">Legna Arbos</div><div class="review-time">a year ago</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"They gave me the confidence and encouragement I needed to overcome my fear of driving."</p><div class="review-author">Yasmany Salgado</div><div class="review-time">Local Guide · 2 years ago</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Reasonable price and quick process — much appreciated when you're from out of town."</p><div class="review-author">Leire Viana</div><div class="review-time">6 months ago</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Excellent teacher. She gives you confidence and motivation. Always grateful."</p><div class="review-author">Vilma Blanco</div><div class="review-time">a year ago</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Very satisfied with the school. Great teachers and excellent staff. I recommend it 1000%!"</p><div class="review-author">Larisa Montero</div><div class="review-time">Local Guide · a year ago</div></div>
+    </div>
+  </div>
+  <div style="text-align:center">
+    <div class="google-badge"><span class="g-logo">G</span><span data-i18n="reviews.verified">All reviews verified on Google Maps</span></div>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="process-header">
+    <p class="section-label" data-i18n="process.label">How It Works</p>
+    <h2 class="section-title" data-i18n="process.title">Your Path to a License</h2>
+    <p data-i18n="process.sub">Four steps. No stress. Just you and your new license.</p>
+  </div>
+  <div class="process-steps">
+    <div class="process-step fade-up"><div class="step-num">1</div><h4 class="step-title" data-i18n="process.p1title">Walk In or Call</h4><p class="step-desc" data-i18n="process.p1desc">No appointment needed for the written test.</p></div>
+    <div class="process-step fade-up"><div class="step-num">2</div><h4 class="step-title" data-i18n="process.p2title">Watch & Learn</h4><p class="step-desc" data-i18n="process.p2desc">We screen a prep video before your test.</p></div>
+    <div class="process-step fade-up"><div class="step-num">3</div><h4 class="step-title" data-i18n="process.p3title">Test & Practice</h4><p class="step-desc" data-i18n="process.p3desc">Take your exam with supportive guidance.</p></div>
+    <div class="process-step fade-up"><div class="step-num">4</div><h4 class="step-title" data-i18n="process.p4title">Drive Free</h4><p class="step-desc" data-i18n="process.p4desc">Pass and hit the road with confidence.</p></div>
+  </div>
+</section>
+
+
+<!-- CLOSING CTA -->
+<section class="closing-cta">
+  <div class="closing-cta-inner">
+    <h2 data-i18n="cta.title">Ready to Start Your Journey?</h2>
+    <p data-i18n="cta.body">Book your written test, driving lessons, or road exam today — walk-ins welcome, no pressure, just a friendly team ready to help.</p>
+    <a href="book.html" class="btn-primary" data-i18n="hero.cta1">Book Your Session</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h3>Maria Auto & Traffic School</h3>
+      <p data-i18n="footer.tagline">Helping Dade County residents earn their license with confidence, warmth, and expertise. Proudly serving our community in English and Spanish.</p>
+      <div class="footer-contact-mini">
+        📍 281 NW 82nd Ave, Miami, FL 33126<br>
+        📞 <a href="tel:+13052168166">(305) 216-8166</a><br>
+        🕐 <span data-i18n-html="contact.hoursValue">Mon–Fri 8am–3pm · Sat 8am–1pm · Sun Closed</span>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer.servicesHeader">Services</h4>
+      <ul>
+        <li><a href="#services" data-i18n="services.s5title">Theoretical Exam</a></li>
+        <li><a href="#services" data-i18n="services.s2title">Road Exam</a></li>
+        <li><a href="#services" data-i18n="services.s3title">Driving Lessons</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer.infoHeader">Info</h4>
+      <ul>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="#why" data-i18n="footer.why">Why Choose Us</a></li>
+        <li><a href="#process" data-i18n="nav.process">How It Works</a></li>
+        <li><a href="#reviews" data-i18n="nav.reviews">Reviews</a></li>
+        <li><a href="faq.html" data-i18n="footer.faq">FAQ</a></li>
+        <li><a href="book.html" data-i18n="nav.contact">Booking</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© <span id="footer-year">2025</span> Maria Auto & Traffic School · 281 NW 82nd Ave, Miami, FL 33126 · <a href="tel:+13052168166">(305) 216-8166</a> · <a href="#" id="privacy-link" data-i18n="footer.privacy">Privacy Policy</a></p>
+    <div class="footer-dade" data-i18n="footer.badge">Proudly Serving Dade County</div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+<!-- BOOKING CONFIRMATION MODAL -->
+<div class="booking-modal-overlay" id="booking-modal" role="dialog" aria-modal="true" aria-label="Booking request notice">
+  <div class="booking-modal-box">
+    <div class="booking-modal-icon">📋</div>
+    <h3 data-i18n="form.modalTitle">This is a request, not a confirmed booking</h3>
+    <p data-i18n="form.modalBody">Submitting this form does not guarantee your selected date and time. If your preferred slot isn't available, Maria or a team member will reach out by phone, text, or email to find a time that works.</p>
+    <div class="booking-modal-actions">
+      <button type="button" class="booking-modal-cancel" id="booking-modal-cancel" data-i18n="form.modalCancel">Go Back</button>
+      <button type="button" class="booking-modal-confirm" id="booking-modal-confirm" data-i18n="form.modalConfirm">I Understand, Submit</button>
+    </div>
+  </div>
+</div>
+
+<!-- PRIVACY MODAL -->
+<div class="modal-overlay" id="privacy-modal" role="dialog" aria-modal="true" aria-label="Privacy Policy">
+  <div class="modal-box">
+    <div class="modal-header">
+      <h2 data-i18n="privacy.title">Privacy Policy</h2>
+      <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
+    </div>
+    <div class="modal-body">
+      <p class="updated" data-i18n="privacy.updated">Last updated: January 1, 2025</p>
+      <p data-i18n="privacy.intro">Maria Auto & Traffic School ("we," "us," or "our") operates this website. This Privacy Policy explains how we collect, use, and protect the personal information you provide when you use our site or submit an inquiry through our contact form.</p>
+      <h3 data-i18n="privacy.h1">1. Information We Collect</h3>
+      <p data-i18n="privacy.p1">When you submit a booking inquiry, we may collect your name, phone number, service interest, preferred language, and any notes you provide. We do not collect payment information, Social Security numbers, or government ID numbers.</p>
+      <h3 data-i18n="privacy.h2">2. How We Use Your Information</h3>
+      <p data-i18n="privacy.p2">We use your information solely to respond to your inquiry, contact you to schedule your session, and provide the services you requested. We never sell or share your information for marketing purposes.</p>
+      <h3 data-i18n="privacy.h3">3. How We Store Your Information</h3>
+      <p data-i18n-html="privacy.p3">Form submissions are processed securely through Formspree, a third-party form service. Review Formspree's practices at <a href="https://formspree.io/legal/privacy-policy/" target="_blank" rel="noopener">formspree.io/legal/privacy-policy</a>. We delete submissions periodically once resolved.</p>
+      <h3 data-i18n="privacy.h4">4. Cookies & Tracking</h3>
+      <p data-i18n="privacy.p4">This site uses no cookies, analytics, or advertising technology. No browsing data is tracked.</p>
+      <h3 data-i18n="privacy.h5">5. Your Rights</h3>
+      <p data-i18n="privacy.p5">You may request to know, correct, or delete the information we hold about you, or opt out of future communications, by contacting us directly.</p>
+      <h3 data-i18n="privacy.h6">6. Contact Us</h3>
+      <p data-i18n-html="privacy.p6">Maria Auto & Traffic School · 281 NW 82nd Ave, Miami, FL 33126 · Phone: <a href="tel:+13052168166">(305) 216-8166</a></p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
