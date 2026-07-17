@@ -750,12 +750,26 @@ function performActualSubmit() {
     formData = new FormData(bookingForm);
     // Inject the pre-formatted summary as a dedicated field
     // so Formspree's email shows clean readable content
-    formData.set('_formatted_summary', buildFormattedMessage());
-    // Also set subject line so the email inbox shows something useful
+    const formattedSummary = buildFormattedMessage();
+    // Build subject line before we clear raw fields
     const firstName = formData.get('first_name') || '';
+    const replyEmail = formData.get('email') || '';
     const services = Array.from(bookingForm.querySelectorAll('[name="services"]:checked')).map(el => el.value);
     const serviceShort = services.length ? services[0].split(' ')[0] : 'Appointment';
-    formData.set('_subject', `New Booking Request — ${firstName ? firstName + ' — ' : ''}${serviceShort}${services.length > 1 ? ' + more' : ''}`);
+    const subject = `New Booking Request — ${firstName ? firstName + ' — ' : ''}${serviceShort}${services.length > 1 ? ' + more' : ''}`;
+    // Add timestamp to the summary
+    const now = new Date();
+    const timestamp = now.toLocaleString('en-US', { hour:'numeric', minute:'2-digit', hour12:true }) + ' - ' + now.toLocaleDateString('en-US', { day:'numeric', month:'long', year:'numeric' });
+    const fullSummary = formattedSummary + '\n\nSubmitted ' + timestamp;
+
+    // Strip ALL raw fields so the email only contains the clean summary
+    for (const key of [...formData.keys()]) {
+      formData.delete(key);
+    }
+    // Re-add only what Formspree needs
+    formData.set('_subject', subject);
+    if (replyEmail) formData.set('_replyto', replyEmail);
+    formData.set('message', fullSummary);
   } catch (err) {
     console.error('FormData construction failed, falling back to native submit:', err);
     bookingForm.submit();
